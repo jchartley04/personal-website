@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Charlie</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    xintegrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <style>
+        /* Optional: Add some padding to the main content area */
+        .contact-content {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        .contact-info-card {
+            background-color: #f8f9fa; /* Light gray background for cards */
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar - Copied from your index.html for consistency -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">Charlie's Portfolio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html#hero">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html#projects">Projects</a>
+              </li>
+              <li class ="nav-item"> 
+                <a class = "nav-link" href="./hobbies.html">Hobbies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Contact Section -->
+    <div class="container contact-content">
+        <h1 class="text-center mb-5 display-4">Get in Touch</h1>
+
+        <div class="row mb-5 justify-content-center">
+            <div class="col-md-6 mb-4">
+                <div class="contact-info-card text-dark">
+                    <h3 class="mb-3">Contact Information</h3>
+                    <p class="lead">Feel free to reach out via email or phone. I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+                    <p><strong class="me-2">Email:</strong> <a href="mailto:charliehartley04@gmail.com" class="text-decoration-none text-dark">charliehartley04@gmail.com</a></p>
+                    <p><strong class="me-2">Phone:</strong> <a href="tel:+14087181344" class="text-decoration-none text-dark">408-718-1344</a></p>
+                    <p><strong class="me-2">Location:</strong> Bay Area</p>
+                </div>
+            </div>
+            <!-- The contact form column has been removed -->
+        </div>
+    </div>
+
+    <!-- Footer - Copied from your index.html -->
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <p class="col-md-4 mb-0 text-body-secondary">© 2025</p>
+      
+          <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none" aria-label="Bootstrap">
+            <svg class="bi me-2" width="40" height="32" aria-hidden="true">
+              <use xlink:href="#bootstrap"></use>
+            </svg>
+          </a>
+      
+          <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item">
+              <a href="https://www.linkedin.com/in/john-hartley8/" class="nav-link px-2 text-body-secondary">LinkedIn</a>
+            </li>
+            <li class="nav-item">
+              <a href="https://github.com/jchartley04" class="nav-link px-2 text-body-secondary">GitHub</a>
+            </li>
+            <li class="nav-item">
+              <a href="./contact.html" class="nav-link px-2 text-body-secondary">Contact Me</a>
+            </li>
+          </ul>
+        </footer>
+      </div>
+
+    <!-- Bootstrap JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script>
+      // JavaScript to close the navbar on link click for mobile
+      document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+          link.addEventListener('click', () => {
+              const navbarCollapse = document.getElementById('navbarNav');
+              if (navbarCollapse && navbarCollapse.classList.contains('show')) {
+                  new bootstrap.Collapse(navbarCollapse, { toggle: false }).hide();
+              }
+          });
+      });
+  </script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+.carousel-item img {
+    height: 500px; /* Set a fixed height for all images */
+    object-fit: cover; /* This will crop the image to fit without distortion */
+  }
+
+  .container-marketing{ 
+    display: flex; 
+    justify-content: center;
+  }
